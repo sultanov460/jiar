@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./reset";
+@import "./navbar";
+@import "./hero";
+@import "./catalog";
+@import "./about";
+@import "./contact";
+
+body {
+  background-color: #000;
+
+  color: #fff;
+}
+
+.container {
+  padding: 0 70px;
+  max-width: 1470px;
+  margin: 0 auto;
+}

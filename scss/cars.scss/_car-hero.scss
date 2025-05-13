@@ -1,0 +1,94 @@
+.hero-title {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bugatti-logo {
+    width: 200px !important;
+    height: 100px !important;
+  }
+
+  h1 {
+    @include carTitle;
+  }
+}
+
+.car-cards {
+  padding: 100px 0;
+  color: #fff;
+  display: flex;
+  gap: 100px;
+  flex-direction: column;
+  .car-card {
+    display: flex;
+    gap: 100px;
+    .car-card-text {
+      h2 {
+        @include carTitle();
+      }
+      p {
+        @include carText();
+      }
+
+      button {
+        background-color: $primary-color;
+        padding: 10px 45px;
+        border-radius: 15px;
+        transition: all 0.2s ease;
+        font-size: 18px;
+        margin-top: 20px;
+
+        &:hover {
+          background-color: $hover-color;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .car-card-image {
+    position: relative;
+    cursor: pointer;
+    .video-link {
+      display: none;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    img {
+      width: 650px;
+      height: 400px;
+      border-radius: 10px;
+      border: 2px solid $primary-color;
+    }
+
+    &:hover {
+      .overlay {
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        width: 650px;
+        height: 400px;
+        z-index: 1;
+      }
+
+      .video-link {
+        display: block;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: $primary-color;
+          font-size: 26px;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
