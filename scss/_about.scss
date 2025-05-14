@@ -1,0 +1,27 @@
+.about-wrapper {
+  img {
+    width: 550px;
+    height: 550px;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .about-text {
+    max-width: 500px;
+    text-align: right;
+
+    h1 {
+      font-size: 64px;
+    }
+
+    p {
+      font-size: 24px;
+      opacity: 80%;
+    }
+
+    span {
+      color: $primary-color;
+    }
+  }
+}

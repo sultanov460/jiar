@@ -1,0 +1,53 @@
+.contact {
+  padding: 200px 0;
+  margin-top: 250px;
+  align-items: center;
+  background-image: url(https://wallpapers.com/images/hd/yellow-green-m4-full-hd-bmw-6w6f3k7wjjswn4pb.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .contact-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    text-align: left;
+
+    .contact-title {
+      margin-bottom: 25px;
+      font-size: 60px;
+      font-weight: 700;
+    }
+
+    .contact-call {
+      font-size: 32px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $hover-color;
+        font-size: 35px;
+      }
+    }
+
+    .contact-call-number {
+      font-size: 21px;
+      font-weight: 200;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $hover-color;
+        font-size: 23px;
+        text-decoration: underline;
+      }
+    }
+
+    .adress {
+      span {
+        font-size: 21px;
+        font-weight: 600;
+      }
+
+      font-size: 16px;
+    }
+  }
+}
