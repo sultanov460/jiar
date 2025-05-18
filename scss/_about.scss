@@ -25,3 +25,28 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .about-wrapper {
+    flex-direction: column;
+
+    img {
+      width: 550px;
+      height: 550px;
+    }
+
+    .about-text {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .about-wrapper {
+    gap: 40px;
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+}

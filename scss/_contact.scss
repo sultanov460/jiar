@@ -21,6 +21,7 @@
     .contact-call {
       font-size: 32px;
       font-weight: 500;
+      max-width: 350px;
       transition: all 0.2s ease;
 
       &:hover {
@@ -33,6 +34,7 @@
       font-size: 21px;
       font-weight: 200;
       transition: all 0.2s ease;
+      max-width: 200px;
 
       &:hover {
         color: $hover-color;
@@ -49,5 +51,15 @@
 
       font-size: 16px;
     }
+  }
+}
+
+@media (max-width: 410px) {
+  .contact-title {
+    font-size: 50px !important;
+  }
+
+  .contact-call {
+    font-size: 30px;
   }
 }

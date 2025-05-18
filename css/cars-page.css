@@ -128,6 +128,9 @@ nav {
   border-radius: 10px;
   border: 2px solid #fff200;
 }
+.car-cards .car-card-image .overlay {
+  transition: all 0.8s ease;
+}
 .car-cards .car-card-image:hover .overlay {
   top: 0;
   left: 0;
@@ -139,7 +142,7 @@ nav {
 }
 .car-cards .car-card-image:hover .video-link {
   display: block;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
 .car-cards .car-card-image:hover .video-link:hover {
   color: #fff200;

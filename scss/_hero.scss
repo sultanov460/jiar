@@ -34,11 +34,10 @@
     button {
       font-size: 16px;
       border-radius: 30px;
-
+      color: #000;
       background-color: $primary-color;
       width: 200px;
       height: 50px;
-      color: #000;
       transition: all 0.3s ease;
       text-align: center;
 
@@ -51,11 +50,16 @@
   }
 
   .video-container {
+    .hero-video_ipad,
+    .hero-video_ipadmini,
+    .hero-video_iphone {
+      display: none;
+    }
     z-index: -1;
     padding: 0;
     video {
       width: 100%;
-      height: 100vh;
+      height: 100%;
     }
 
     .overlay {
@@ -64,8 +68,59 @@
       background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-video_desktop {
+    display: none !important;
+  }
+
+  .hero-video_ipad {
+    display: block !important;
+  }
+
+  .hero-title {
+    h1 {
+      font-size: 65px !important;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-video_ipad {
+    display: none !important;
+  }
+
+  .hero-video_ipadmini {
+    display: block !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-video_ipadmini {
+    display: none !important;
+  }
+
+  .hero-video_iphone {
+    display: block !important;
+  }
+
+  .hero-title {
+    h1 {
+      font-size: 45px !important;
+    }
+  }
+
+  .hero-btns {
+    gap: 40px !important;
+
+    button {
+      width: 150px !important;
+      height: 45px !important;
     }
   }
 }

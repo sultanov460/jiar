@@ -68,6 +68,10 @@
       border: 2px solid $primary-color;
     }
 
+    .overlay {
+      transition: all 0.8s ease;
+    }
+
     &:hover {
       .overlay {
         top: 0;
@@ -81,7 +85,7 @@
 
       .video-link {
         display: block;
-        transition: all 0.2s ease;
+        transition: all 0.4s ease;
 
         &:hover {
           color: $primary-color;

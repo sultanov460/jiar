@@ -22,6 +22,8 @@ ul {
 
 nav {
   background-color: #000;
+  width: 100%;
+  z-index: 3;
 }
 
 .nav-wrapper {
@@ -68,6 +70,34 @@ nav {
   opacity: 1;
 }
 
+@media (max-width: 800px) {
+  .subnav-wrapper {
+    padding: 10px 20px;
+    gap: 20px;
+  }
+  .subnav-wrapper a {
+    font-size: 18px;
+  }
+  .subnav-wrapper a:hover {
+    font-size: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .nav-wrapper img {
+    width: 100px;
+    height: 100px;
+  }
+  .nav-wrapper .nav-links h1 {
+    font-size: 24px;
+  }
+  .subnav-wrapper a {
+    font-size: 14px;
+  }
+  .subnav-wrapper a:hover {
+    gap: 10px;
+    font-size: 16px;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -101,10 +131,10 @@ nav {
 .hero .hero-btns button {
   font-size: 16px;
   border-radius: 30px;
+  color: #000;
   background-color: #fff200;
   width: 200px;
   height: 50px;
-  color: #000;
   transition: all 0.3s ease;
   text-align: center;
 }
@@ -117,9 +147,14 @@ nav {
   z-index: -1;
   padding: 0;
 }
+.hero .video-container .hero-video_ipad,
+.hero .video-container .hero-video_ipadmini,
+.hero .video-container .hero-video_iphone {
+  display: none;
+}
 .hero .video-container video {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .hero .video-container .overlay {
   top: 0;
@@ -127,10 +162,47 @@ nav {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 1;
 }
 
+@media (max-width: 1000px) {
+  .hero-video_desktop {
+    display: none !important;
+  }
+  .hero-video_ipad {
+    display: block !important;
+  }
+  .hero-title h1 {
+    font-size: 65px !important;
+  }
+}
+@media (max-width: 800px) {
+  .hero-video_ipad {
+    display: none !important;
+  }
+  .hero-video_ipadmini {
+    display: block !important;
+  }
+}
+@media (max-width: 500px) {
+  .hero-video_ipadmini {
+    display: none !important;
+  }
+  .hero-video_iphone {
+    display: block !important;
+  }
+  .hero-title h1 {
+    font-size: 45px !important;
+  }
+  .hero-btns {
+    gap: 40px !important;
+  }
+  .hero-btns button {
+    width: 150px !important;
+    height: 45px !important;
+  }
+}
 .catalog-cards {
   margin-top: 100px;
   display: flex;
@@ -187,6 +259,27 @@ h3 {
   color: #fff200;
 }
 
+@media (max-width: 1000px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-wrapper img {
+    width: 550px;
+    height: 550px;
+  }
+  .about-wrapper .about-text {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .about-wrapper {
+    gap: 40px;
+  }
+  .about-wrapper img {
+    width: 400px;
+    height: 400px;
+  }
+}
 .contact {
   padding: 200px 0;
   margin-top: 250px;
@@ -210,6 +303,7 @@ h3 {
 .contact .contact-texts .contact-call {
   font-size: 32px;
   font-weight: 500;
+  max-width: 350px;
   transition: all 0.2s ease;
 }
 .contact .contact-texts .contact-call:hover {
@@ -220,6 +314,7 @@ h3 {
   font-size: 21px;
   font-weight: 200;
   transition: all 0.2s ease;
+  max-width: 200px;
 }
 .contact .contact-texts .contact-call-number:hover {
   color: #edc001;
@@ -234,6 +329,14 @@ h3 {
   font-weight: 600;
 }
 
+@media (max-width: 410px) {
+  .contact-title {
+    font-size: 50px !important;
+  }
+  .contact-call {
+    font-size: 30px;
+  }
+}
 body {
   background-color: #000;
   color: #fff;
@@ -243,4 +346,10 @@ body {
   padding: 0 70px;
   max-width: 1470px;
   margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 35px;
+  }
 }/*# sourceMappingURL=style.css.map */
