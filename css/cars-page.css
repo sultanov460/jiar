@@ -61,8 +61,25 @@ nav {
   height: 100px;
 }
 .hero-title .bugatti-logo {
-  width: 200px !important;
-  height: 100px !important;
+  width: 170px !important;
+  height: 90px !important;
+}
+.hero-title .rollsroyce-logo {
+  width: 100px !important;
+  height: 160px !important;
+}
+.hero-title .bentley-logo {
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+}
+.hero-title .audi-logo {
+  width: 130px !important;
+}
+.hero-title .porsche-logo,
+.hero-title .landrover-logo {
+  width: 130px !important;
+  height: 130px !important;
 }
 .hero-title h1 {
   font-size: 44px;
